@@ -29,4 +29,5 @@ SRC +=  ./lib/glcdfont.c \
         #./lib/host_led_state_reader.c \
         # ./lib/keylogger.c \
 
-BOOTLOADER = qmk-dfu
+BOOTLOADER = qmk-dfu     # Right half (Elite C)
+#BOOTLOADER = caterina    # Left half (Pro Micro)
