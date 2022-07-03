@@ -26,17 +26,23 @@ enum layer_names {
 #define RAISE  MO(_RAISE)
 #define ADJUST MO(_ADJUST)
 
-// Left-hand home row mods
+// Left-hand home row mods, base layer
 #define CTL_A LCTL_T(KC_A)
 #define ALT_S LALT_T(KC_S)
 #define GUI_D LGUI_T(KC_D)
 #define SFT_F LSFT_T(KC_F)
 
-// Right-hand home row mods
+// Right-hand home row mods, base layer
 #define SFT_J RSFT_T(KC_J)
 #define GUI_K RGUI_T(KC_K)
 #define ALT_L LALT_T(KC_L)
 #define CTL_SCLN RCTL_T(KC_SCLN)
+
+// Left-hand home row mods, raise layer
+#define CTL_F2 LCTL_T(KC_F2)
+#define ALT_F3 LALT_T(KC_F3)
+#define GUI_F4 LGUI_T(KC_F4)
+#define SFT_F5 LSFT_T(KC_F5)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT_avlo44(
@@ -55,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_avlo44(
     _______,     KC_1,     KC_2,     KC_3,     KC_4,     KC_5,               KC_6,     KC_7,      KC_8,     KC_9,     KC_0,  _______,
-      KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,            KC_LEFT,  KC_DOWN,     KC_UP,  KC_RGHT,  _______,  _______,
+      KC_F1,   CTL_F2,   ALT_F3,   GUI_F4,   SFT_F5,    KC_F6,            KC_LEFT,  KC_DOWN,     KC_UP,  KC_RGHT,  _______,  _______,
       KC_F7,    KC_F8,    KC_F9,   KC_F10,   KC_F11,   KC_F12,            _______,  _______,   _______,  _______,  _______,  _______,
                                  _______, _______, _______,  _______, _______,  _______, _______, _______
   ),
