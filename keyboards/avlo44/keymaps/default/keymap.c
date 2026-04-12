@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC,   KC_Q,     KC_W,     KC_E,     KC_R,      KC_T,               KC_Y,     KC_U,     KC_I,     KC_O,       KC_P,   KC_BSPC,
     KC_TAB,   CTL_A,   ALT_S,    GUI_D,    SFT_F,      KC_G,               KC_H,    SFT_J,    GUI_K,    ALT_L,   CTL_SCLN,   KC_QUOT,
     KC_LSFT,  KC_Z,     KC_X,     KC_C,     KC_V,      KC_B,               KC_N,     KC_M,     KC_COMM,  KC_DOT,  KC_SLSH,   KC_RSFT,
-                            KC_LCTL, KC_LCMD, MO(_LOWER), KC_SPC, KC_ENT, MO(_RAISE), KC_RALT,   _______
+                            KC_LCTL, KC_LCMD,  MO(_LOWER), KC_SPC, KC_ENT, MO(_RAISE), KC_RALT,   _______
   ),
 
   [_LOWER] = LAYOUT_avlo44(
